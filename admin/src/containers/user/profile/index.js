@@ -19,6 +19,7 @@ const validateInput = (type, checkingText) => {
         // console.log('checkingResult', checkingResult);
         if(checkingResult !== null)
         {
+        
             return {
                 isInputValid: true,
                 errorMessage: ''
