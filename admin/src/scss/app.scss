@@ -1,0 +1,37 @@
+@import './settings/variable';
+//themes' colors
+@import './vendor';
+//base...
+@import './generic/normalize.scss';
+@import './generic/box-sizing.scss';
+@import './base/scaffolding';
+@import './base/typography';
+@import './base/global';
+//components...
+@import './component/sidebar';
+@import './component/topbar';
+@import './component/btn';
+@import './component/card';
+@import './component/chat';
+@import './component/load';
+@import './component/text-editor';
+@import './component/material-form';
+@import './component/mappanel';
+@import './component/modal';
+@import "./component/chatBox";
+@import './component/check-box';
+@import './component/select-options';
+@import './component/tabs';
+@import './component/radio-btn';
+@import './component/toggle-btn';
+@import './component/dropzone';
+@import './component/form';
+@import './component/table';
+//@import './component/products-style';
+//pages...
+@import './containers/account';
+@import './containers/chat';
+@import './containers/pages';
+//objects...
+@import './objects/layout.scss';
+

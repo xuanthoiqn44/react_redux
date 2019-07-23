@@ -1,0 +1,38 @@
+{
+  "nameLanguage" : {
+    "language": "語言",
+    "replaceNameProduct": "產品名稱",
+    "renameProductRequired": "輸入產品名稱！",
+    "replacePrice": "購買價格",
+    "replaceSold": "促銷價",
+    "replaceEditor": "描述",
+    "replaceStatus": "狀態",
+    "reDefault": "默認",
+    "rePending": "等待",
+    "reSend": "已發送",
+    "replaceNameCategory": "主題",
+    "replaceNameBtnUpdate": "更新",
+    "replaceNameBtnAddNew": "添加新",
+    "replaceNameBtnClear": "刪除",
+    "replaceNameBtnClose": "退出",
+    "replaceImage": "圖片",
+    "errorEditor" : "請輸入產品的內容。",
+    "limitUploadImage" : "你只能上傳3張圖片",
+    "errorUploadImage" : "圖像太重了！" ,
+
+    "productList" : "產品列表",
+    "addNewProduct" : "添加新產品",
+    "productHeader": "產品",
+    "product" : "產品",
+    "price" : "定價",
+    "sale" : "賣",
+    "image" : "圖像",
+    "category" : "主題",
+    "dateCreate" : "創建日期",
+    "status" : "狀態",
+    "actions" : "編輯和刪除",
+
+    "next" : "下一個",
+    "previous" : "上一頁"
+  }
+}

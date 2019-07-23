@@ -1,0 +1,38 @@
+{
+  "nameLanguage": {
+    "language": "ไทย",
+    "replaceNameProduct": "ชื่อผลิตภัณฑ์",
+    "renameProductRequired": "กรุณาป้อนชื่อผลิตภัณฑ์!",
+    "replacePrice": "ราคา",
+    "replaceSold": "การขาย",
+    "replaceEditor": "คำอธิบาย",
+    "replaceStatus": "Status",
+    "reDefault": "ค่าเริ่มต้น",
+    "rePending": "รอดำเนินการ",
+    "reSend": "ส่ง",
+    "replaceNameCategory": "หมวดหมู่",
+    "replaceNameBtnUpdate": "อัพเดท",
+    "replaceNameBtnAddNew": "เพิ่มใหม่",
+    "replaceNameBtnClear": "ชัดเจน",
+    "replaceNameBtnClose": "ปิด",
+    "replaceImage": "Images",
+    "errorEditor": "ได้โปรด! คำอธิบายการป้อนของคุณ",
+    "limitUploadImage": "มีเพียง 3 รูปเท่านั้นที่สามารถอัพโหลดได้ในเวลา",
+    "errorUploadImage": "รูปภาพใหญ่เกินไป",
+
+    "productList": "รายการผลิตภัณฑ์",
+    "addNewProduct": "เพิ่มผลิตภัณฑ์ใหม่",
+    "productHeader": "ส่วนหัวของผลิตภัณฑ์",
+    "product": "ผลิตภัณฑ์",
+    "price": "ราคา",
+    "sale": "ลดราคา",
+    "image": "ภาพ",
+    "category": "หมวดหมู่",
+    "dateCreate": "สร้างวันที่",
+    "status": "สถานะ",
+    "actions": "การปฏิบัติ",
+
+    "next": "ถัดไป",
+    "previous": "ก่อนหน้า"
+  }
+}

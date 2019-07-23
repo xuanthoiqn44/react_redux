@@ -1,0 +1,33 @@
+@media only screen and (min-width: 900px) {
+	.card_title_notification button.btn.btn-primary {
+		position: absolute;
+		top: 6px;
+		right: 3%;
+	}
+	.col-lg-8 .card_title_notification {
+		padding-bottom: 15px;
+	}
+	.col-lg-4 input::-webkit-input-placeholder { 
+		line-height: 1.5em;
+		padding-left: 10px;
+		
+	}
+	.col-lg-4 input#title {
+		padding:10px;
+	}
+	.col-lg-4 p strong {
+		font-size: 16px;
+	}
+	.action-container {
+		text-align: center;
+	}
+	.modal-content{
+		    background-color: #fff !important;
+	}
+	.showAdd {
+		display: none;
+	}
+	.hiddenAdd {
+		display: none;
+	}
+}

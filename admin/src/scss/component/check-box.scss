@@ -1,0 +1,257 @@
+
+.chat-box {
+  position: absolute;
+  height: 54.2rem;
+  display: flex;
+  align-items: flex-end;
+
+  //z-index: 102;
+  //opacity: 0.3;
+  //transition: opacity 4s linear;
+  //&:hover {
+  //  transition: opacity 0.5s linear;
+  //  opacity: 1;
+  //}
+  svg {
+    fill: white !important;
+    position: absolute;
+    left: 6px;
+    bottom: 7px;
+    cursor: pointer;
+  }
+  .box-toggle-onClose {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 1.7rem;
+    border-radius: 0 3px 0 0;
+    @include themify($themes) {
+      color: themed('colorBackground');
+    }
+
+  }
+  .box-toggle-onOpen {
+    display: none;
+  }
+  .chat-box-open {
+    position: absolute;
+    border: 0;
+    background: rgba(54,54,54,0.8) ;
+    border-top-right-radius: 10px;
+    padding-bottom: 0.5rem;
+    animation: fadeIn 0.8s;
+    .personChat-title {
+      color: white;
+      padding-top: 5px;
+      margin-left: 1rem;
+    }
+    .toggle-close-chat-box {
+      cursor: pointer;
+      position: absolute;
+      right: 8%;
+      top: 13%;
+    }
+    .emoji-toggle {
+      position: absolute;
+      bottom: 7%;
+      right: 31%;
+    }
+    .title-button-popup {
+      color: #fff;
+      background-color: #363636;
+      border-color: #363636;
+      margin-top: 0.8rem;
+      padding: 0.5rem 2rem;
+      border-radius:0;
+      font-size: 0.8rem;
+      animation: fadeIn 0.7s;
+    }
+    .title-button {
+      color: #fff;
+      background-color: #007bff;
+      border-color: #007bff;
+      padding: 0.2rem 2rem;
+      border-radius: 0 0 3px 0;
+      font-size: 0.8rem;
+    }
+    .chat-box-notification {
+      width: 21.5rem;
+      padding: 0.4rem 1rem;
+      font-size: 0.7rem;
+      @include themify($themes) {
+        color: themed('colorBackground');
+      }
+    }
+    .chat-box-message {
+      width: 20.7rem;
+      height: 7rem;
+      padding: 0 1rem;
+      overflow: auto;
+      scroll-behavior: smooth;
+      &::-webkit-scrollbar{
+        width: 5px;
+
+      }
+      &::-webkit-scrollbar-thumb{
+        background: #363636;
+        transition: all 0.5s linear;
+      }
+      &:hover {
+        &::-webkit-scrollbar-thumb{
+          background: white;
+          transition: all 0.5s linear;
+        }
+      }
+      .chat-box-message-wrapper{
+        display: flex;
+        flex-direction: row;
+        line-height: 1.4rem;
+        letter-spacing: 1px;
+        font-weight: 100;
+
+        .userName {
+          width: 4rem;
+          font-size: 0.7rem;
+          color: $color-userName-chat-box;
+          font-family: 'Noto Sans', sans-serif;
+          transition: all 0.5s linear;
+          cursor: pointer;
+          &:hover {
+            color: white;
+            cursor: pointer;
+            transition: all 0.5s linear;
+
+          }
+        }
+        .content {
+          font-size: 0.7rem;
+          letter-spacing: 0px;
+          width: 14rem;
+          font-family: 'Noto Sans', sans-serif;
+
+          img{
+            height:15px;
+            width:15px;
+            background-image:none;
+          }
+          
+          @include themify($themes) {
+            color: themed('colorBackground');
+          }
+        }
+      }
+    }
+    .person-chat-pop-up {
+      width: 5rem;
+      height: 5rem;
+      position: absolute;
+      top: 37%;
+      left: 30%;
+      z-index: 1000;
+    }
+    .chat-box-input-message {
+      width: 21rem;
+      height: 3rem;
+      padding-top: 0.5rem;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: start;
+      justify-content: center;
+      .btn-group .btn {
+        background: rgba(189, 195, 199, 0.8);
+        border: 0;
+        color: white;
+        border-radius: 5px 0 0 5px;
+        margin-left: 0.6rem;
+        height: 2rem;
+        font-size: 0.7rem;
+        display: flex;
+        align-items: center;
+        padding: 0 0.5rem;
+        width: 4.5rem;
+      }
+      .dropdown-toggle::after {
+        margin-top: 2px;
+      }
+      .dropdown-menu{
+        min-width: 1rem !important;
+        border-radius: 0px;
+        margin-left: 1px;
+        width: 72px;
+      }
+      .dropdown-menu.show {
+        background: rgba(189, 195, 199, 0.8);
+        border: 0;
+      }
+      .dropdown-item {
+        padding: 4px 8px;
+        color: white;
+        font-size: 0.8rem;
+        cursor: pointer;
+        &:hover {
+          color: #363636;
+        }
+      }
+      .form-control {
+        height: 2rem;
+        width: 11rem;
+        margin-left: 0.2rem;
+        border-radius: 0;
+        background-color:rgba(189, 195, 199, 0.8);
+        padding-right: 1.5rem;
+        border: 0;
+        color: white;
+        font-size: 0.8rem;
+        &::placeholder{
+          color: rgba(255,255,255,0.6);
+          font-size:0.8rem;
+        }
+      }
+      
+      .emojionearea-button>div, .emojionearea-picker .emojionearea-wrapper:after{
+        background-image:none !important;
+      }
+      .emojionearea-picker.emojionearea-picker-position-top{
+       // top:-600px !important;
+      }
+      .btn-primary {
+        height: 2rem;
+        color: #fff;
+        background-color: #007bff;
+        border-color: #007bff;
+        margin-left: 0.2rem;
+        width: 0;
+        font-size: 0.7rem;
+        display: flex;
+        justify-content: center;
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+      }
+    }
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}

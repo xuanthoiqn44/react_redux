@@ -1,0 +1,255 @@
+@import '~react-vis/dist/styles/plot';
+@import '~react-vis/dist/styles/legends';
+@import '~react-vis/dist/styles/radial-chart';
+@import '~react-vis/dist/styles/treemap';
+@import '~react-vis/dist/styles/examples';
+
+//recharts
+
+path.recharts-sector {
+
+  @include themify($themes) {
+    stroke: themed('colorBackground');
+  }
+}
+
+.recharts-legend-item-text {
+
+  @include themify($themes) {
+    color: themed('colorText');
+  }
+}
+
+.recharts-text {
+  fill: $color-additional;
+  opacity: 0.6;
+}
+
+.recharts-cartesian-axis-line {
+  opacity: 0;
+}
+
+.recharts-cartesian-grid-horizontal line, .recharts-cartesian-grid-vertical line {
+  fill: $color-additional;
+  opacity: 0.2;
+}
+
+.recharts-brush-slide {
+  fill: #dee3eb;
+  fill-opacity: 1;
+}
+
+.recharts-brush-traveller {
+  transform: translateX(-8px);
+
+  rect {
+    fill: #ffffff;
+    width: 12px;
+    stroke: #dee3eb;
+  }
+
+  line {
+    stroke: #dee3eb;
+    transform: translateX(4px);
+  }
+
+  &:first-of-type {
+    transform: translateX(0);
+  }
+}
+
+.recharts-tooltip-cursor {
+  fill-opacity: 0.2;
+}
+
+//chartsjs
+
+.card {
+
+  .chartjs-size-monitor {
+
+    & + .card__title:not(:first-child) {
+      margin-top: 0;
+    }
+  }
+}
+
+// rc-notification
+.rc-notification {
+  position: fixed;
+  z-index: 9999;
+}
+.rc-notification-notice {
+  display: block;
+  width: auto;
+  line-height: 1.5;
+  vertical-align: middle;
+  position: relative;
+}
+.rc-notification-notice-close {
+  position: absolute;
+  cursor: pointer;
+  outline: none;
+  font-weight: 700;
+  line-height: 1;
+  opacity: .2;
+  text-decoration: none;
+}
+.rc-notification-notice-close-x:after {
+  content: '×';
+}
+.rc-notification-fade-enter {
+  opacity: 0;
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.55, 0, 0.55, 0.2);
+  animation-play-state: paused;
+}
+.rc-notification-fade-leave {
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.55, 0, 0.55, 0.2);
+  animation-play-state: paused;
+}
+.rc-notification-fade-enter.rc-notification-fade-enter-active {
+  animation-name: rcNotificationFadeIn;
+  animation-play-state: running;
+
+  &.right-up {
+    animation-name: rcNotificationRightFadeIn;
+  }
+
+  &.left-up {
+    animation-name: rcNotificationLeftFadeIn;
+  }
+}
+.rc-notification-fade-leave.rc-notification-fade-leave-active {
+  animation-name: rcDialogFadeOut;
+  animation-play-state: running;
+}
+@keyframes rcNotificationFadeIn {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes rcNotificationLeftFadeIn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes rcNotificationRightFadeIn {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes rcDialogFadeOut {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+.rc-notification {
+  left: auto !important;
+  top: 60px !important;
+  height: 0;
+
+  & > span {
+    height: 0;
+    display: block;
+  }
+}
+
+.rc-notification-notice-close {
+  right: 45px;
+  top: 15px;
+  font-size: 26px;
+  line-height: 1;
+  font-weight: 300;
+  color: #555555;
+  text-shadow: none;
+  opacity: 0.2;
+
+  &:hover {
+    opacity: 0.5;
+    color: #555555;
+  }
+}
+
+.function-style{
+  position: absolute;
+  top: 30px;
+  right: 20px;
+}
+
+.modal-window {
+  position: fixed;
+  background-color: rgba(0, 153, 255, 0.473);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  &:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  &>div {
+    width: 800px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2em;
+    background: #ffffff;
+    color: #333333;
+  }
+  header {
+    font-weight: bold;
+  }
+  h1 {
+    font-size: 150%;
+    margin: 0 0 15px;
+    color: #333333;
+  }
+}
+
+.modal-close {
+  color: #aaa;
+  line-height: 50px;
+  font-size: 80%;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 70px;
+  text-decoration: none;
+  &:hover {
+    color: #000;
+  }
+}

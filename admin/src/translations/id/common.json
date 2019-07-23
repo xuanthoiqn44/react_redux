@@ -1,0 +1,38 @@
+{
+  "nameLanguage": {
+    "language": "VN",
+    "replaceNameProduct": "Nama produk",
+    "renameProductRequired": "Masukkan nama produk!",
+    "replacePrice": "Harga pembelian",
+    "replaceSold": "Harga jual",
+    "replaceEditor": "Deskripsi",
+    "replaceStatus": "Status",
+    "reDefault": "Default",
+    "rePending": "Waiting",
+    "reSend": "Terkirim",
+    "replaceNameCategory": "Topik",
+    "replaceNameBtnUpdate": "Update",
+    "replaceNameBtnAddNew": "Add new",
+    "replaceNameBtnClear": "Hapus",
+    "replaceNameBtnClose": "Keluar",
+    "replaceImage": "Gambar",
+    "errorEditor": "Silakan masukkan konten untuk produk.",
+    "limitUploadImage": "Anda hanya dapat mengunggah 3 gambar",
+    "errorUploadImage": "Gambarnya terlalu berat!" ,
+
+    "productList": "Daftar produk",
+    "addNewProduct": "Tambahkan produk baru",
+    "productHeader": "Products",
+    "product": "Produk",
+    "price": "Harga",
+    "sale": "Jual",
+    "image": "Image",
+    "category": "Subjek",
+    "dateCreate": "Tanggal dibuat",
+    "status": "Status",
+    "actions": "Edit dan Hapus",
+
+    "next": "Halaman selanjutnya",
+    "previous": "Halaman sebelumnya"
+  }
+}

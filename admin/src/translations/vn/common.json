@@ -1,0 +1,39 @@
+{
+  "nameLanguage" : {
+    "language": "VN",
+    "replaceNameProduct": "Tên sản phẩm",
+    "renameProductRequired": "Nhập tên sản phẩm !",
+    "replacePrice": "Giá mua",
+    "replaceSold": "Giá bán",
+    "replaceEditor": "Mô tả",
+    "replaceStatus": "Trạng thái",
+    "reDefault": "Mặc định",
+    "rePending": "Đang chờ",
+    "reSend": "Đã gửi",
+    "replaceNameCategory": "Chủ đề",
+    "replaceNameBtnUpdate": "Cập nhật",
+    "replaceNameBtnAddNew": "Thêm mới",
+    "replaceNameBtnClear": "Xoá",
+    "replaceNameBtnClose": "Thoát",
+    "replaceImage": "Hình Ảnh",
+    "errorEditor" : "Bạn vui lòng nhập nội dung cho sản phẩm.",
+    "limitUploadImage" : "Bạn chỉ có thể tải lên 3 hình ảnh",
+    "errorUploadImage" : "Hình ảnh quá nặng!" ,
+    "errorTotal" : "Tổng dung lượng ảnh lớn quá nà!" ,
+
+    "productList" : "Danh sách sản phẩm",
+    "addNewProduct" : "Thêm sản phẩm mới",
+    "productHeader": "Các Sản phẩm",
+    "product" : "Sản phẩm",
+    "price" : "Định giá",
+    "sale" : "Bán",
+    "image" : "Hình ảnh",
+    "category" : "Chủ đề",
+    "dateCreate" : "Ngày tạo",
+    "status" : "Trạng thái",
+    "actions" : "Chỉnh sửa và Xóa",
+
+    "next" : "Trang tiếp theo",
+    "previous" : "Trang trước"
+  }
+}

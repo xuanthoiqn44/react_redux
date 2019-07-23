@@ -1,0 +1,30 @@
+# System and IDE files
+Thumbs.db
+.DS_Store
+.idea
+*/.svn/*
+.svn
+.gitignore/
+*.suo
+*.sublime-project
+*.sublime-workspace
+admin/package-lock.json
+api_admin/package-lock.json
+
+# Vendors
+node_modules/
+api_admin/images/
+admin/node_modules/*
+api_admin/node_modules/*
+api_admin/images/*
+api_admin/package-lock.json
+
+# Build
+/npm-debug.log
+
+# Vim temps
+*~
+*.swp
+*.swo
+
+.svn/

@@ -1,0 +1,42 @@
+{
+  "welcome": {
+    "title": "Welcome to",
+    "intro": "To get started, edit <1><0></0></1> and save to reload."
+  },
+  "nameLanguage" : {
+    "language": "Korean",
+    "replaceNameProduct": "상품명",
+    "renameProductRequired": "상품명 입력",
+    "replacePrice": "구매 가격",
+    "replaceSold": "판매 가격",
+    "replaceEditor": "제품 정보",
+    "replaceStatus": "거래상태",
+    "reDefault": "기본값",
+    "rePending": "대기중",
+    "reSend": "보냄",
+    "replaceNameCategory": "카테고리",
+    "replaceNameBtnUpdate": "업데이트",
+    "replaceNameBtnAddNew": "제품 등록",
+    "replaceNameBtnClear": "취소",
+    "replaceNameBtnClose": "닫기",
+    "replaceImage": "사진",
+    "errorEditor" : "제품 정보를 입력해주세요.",
+    "limitUploadImage" : " 제품 이미지는 최대 3개까지 올릴 수 있습니다",
+    "errorUploadImage" : "이미지 용량이 초과되었습니다" ,
+
+    "productList" : "제품 목록",
+    "addNewProduct" : "상품 목록",
+    "productHeader": "제품 헤더",
+    "product" : "생성물",
+    "price" : "생성물",
+    "sale" : "판매",
+    "image" : "이미지",
+    "category" : "범주",
+    "dateCreate" : "날짜 생성",
+    "status" : "지위",
+    "actions" : "행위",
+
+    "next" : "다음",
+    "previous" : "이전"
+  }
+}
