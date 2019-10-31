@@ -41,7 +41,7 @@
     "emoji-mart": "^2.9.1",
     "emojione": "^4.0.0",
     "emojionearea": "^3.0.0",
-    "eslint": "4.10.0",
+    "eslint": "4.19.1",
     "eslint-config-react-app": "^2.1.0",
     "eslint-loader": "1.9.0",
     "eslint-plugin-flowtype": "2.39.1",
